@@ -1,0 +1,174 @@
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c5c5c5;
+    height: 100vh;
+}
+
+.modalContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 25px;
+    height: 220px;
+    width: 600px;
+    gap: 2rem;
+}
+
+.modalheight{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 25px;
+    height: 400px;
+    width: 550px;
+    gap: 2rem;
+}
+
+.height {
+    height: 50px;
+    width: 500px;
+}
+
+.modalContent > p {
+    font-size: 24px;
+    font-weight: 600;
+    width: 60%;
+    text-align: center;
+    font-family: 'Poppins';
+}
+
+.taskEdit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    /* border: 2px solid black; */
+}
+
+.taskText {
+    color: #747474;
+    font-size: 16px;
+    font-weight: 650;
+    font-family: 'Poppins';
+}
+
+.taskInput {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    width: 70%;
+}
+
+.taskEdit > p {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Poppins';
+}
+
+.left {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    /* border: 2px solid black; */
+    width: 80%;
+}
+
+.input {
+    border: 1px solid #d8d8d8;
+    border-radius: 15px;
+    padding:  18px 15px;
+    width: 100%;
+    font-size: 14px;
+    color: #747474;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.taskButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.deleteBtn {
+    background-color: #723eff;
+    padding: 15px 35px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.addBtn {
+    background-color: #747474;
+    padding: 15px 35px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.cancelBtn {
+    background-color: transparent;
+    border: 1px solid #e4e4e4;
+    padding: 15px 35px;
+    border-radius: 15px;
+    color: #747474;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.buttons button {
+    padding: 12px 35px;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.taskButtons button {
+    height: 35px;
+    width: 85px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.taskButtons .high {
+    background-color: transparent;
+    border: 1px solid red;
+    color: red;
+}
+.taskButtons .low {
+    background-color: transparent;
+    border: 1px solid lawngreen;
+    color: lawngreen;
+}
+.taskButtons .medium {
+    background-color: transparent;
+    border: 1px solid orange;
+    color: orange;
+}
+
+
+
+
+

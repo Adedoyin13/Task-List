@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+.taskPage {
+    background-color: #e7e7e7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 99vw;
+}
+
+.taskCon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 0;
+  width: 50%;
+}
+
+.taskHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.taskHeader h1 {
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "Poppins";
+}
+
+.addTaskBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #723eff;
+  color: #fff;
+  padding: 10px 25px;
+  border: 10px;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.taskBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.tasks {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-radius: 20px;
+  padding: 1rem 2rem;
+  font-family: 'Poppins';
+}
+
+.task {
+    color: #747474;
+}
+
+.taskButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+
+.iconLoader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.taskButton button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #e7e7e7;
+    padding: 5px 10px;
+    border: 10px;
+    border-radius: 6px;
+    color: #747474;
+    font-size: 12px;
+    font-size: 400;
+    cursor: pointer;
+}
+
+.modalIcons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.pri{
+    font-size: 14px;
+    font-weight: 400;
+    color: #747474;
+    /* color: red; */
+}
+
+
+.priority p:nth-child(2){
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.high {
+    color: red;
+}
+
+.low {
+    color: lawngreen;
+}
+
+.medium {
+    color: orange;
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.taskParagraphs {
+    width: 25%;
+}
+
+
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 25px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 2px solid #723eff;
+    animation:
+      l20-1 0.8s infinite linear alternate,
+      l20-2 1.6s infinite linear;
+  }
+  @keyframes l20-1{
+     0%    {clip-path: polygon(50% 50%,0       0,  50%   0%,  50%    0%, 50%    0%, 50%    0%, 50%    0% )}
+     12.5% {clip-path: polygon(50% 50%,0       0,  50%   0%,  100%   0%, 100%   0%, 100%   0%, 100%   0% )}
+     25%   {clip-path: polygon(50% 50%,0       0,  50%   0%,  100%   0%, 100% 100%, 100% 100%, 100% 100% )}
+     50%   {clip-path: polygon(50% 50%,0       0,  50%   0%,  100%   0%, 100% 100%, 50%  100%, 0%   100% )}
+     62.5% {clip-path: polygon(50% 50%,100%    0, 100%   0%,  100%   0%, 100% 100%, 50%  100%, 0%   100% )}
+     75%   {clip-path: polygon(50% 50%,100%  100%, 100% 100%,  100% 100%, 100% 100%, 50%  100%, 0%   100% )}
+     100%  {clip-path: polygon(50% 50%,50%   100%,  50% 100%,   50% 100%,  50% 100%, 50%  100%, 0%   100% )}
+  }
+  @keyframes l20-2{ 
+    0%    {transform:scaleY(1)  rotate(0deg)}
+    49.99%{transform:scaleY(1)  rotate(135deg)}
+    50%   {transform:scaleY(-1) rotate(0deg)}
+    100%  {transform:scaleY(-1) rotate(-135deg)}
+  }
+
+
+
