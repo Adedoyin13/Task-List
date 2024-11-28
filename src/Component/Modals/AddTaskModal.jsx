@@ -3,13 +3,13 @@ import { IoClose } from "react-icons/io5";
 import './Modal.css'
 import '../TaskList.css'
 
-const AddTaskModal = () => {
+const AddTaskModal = ({onAddTask, onClose}) => {
   return (
     <div className='modal'>
         <div className='modalheight'>
             <div className="taskEdit">
                 <p>Add Task</p>
-                <IoClose size={25} className='icon'/>
+                <IoClose size={25} className='icon'  onClick={onClose}/>
             </div>
             <div className="taskInput">
                 <p className='taskText'>Task</p>

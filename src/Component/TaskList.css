@@ -116,7 +116,6 @@
     font-size: 14px;
     font-weight: 400;
     color: #747474;
-    /* color: red; */
 }
 
 
@@ -142,13 +141,80 @@
 }
 
 .taskParagraphs {
-    width: 25%;
+    width: 28%;
 }
 
+.todo {
+  width: 25px;
+  aspect-ratio: 1;
+  border: 2px solid #e7e7e7;
+  border-radius: 50%;
+}
 
+.progress {
+  width: 25px;
+  aspect-ratio: 1;
+  /* border-left: 2px solid #e7e7e7; */
+  border-right: 2px solid #723eff;
+  border-radius: 50%;
+}
+
+.done {
+  width: 25px;
+  aspect-ratio: 1;
+  border: 2px solid #723eff;
+  border-radius: 50%;
+}
 
 /* HTML: <div class="loader"></div> */
-.loader {
+/* .loader {
+    width: 25px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 2px solid #723eff;
+    animation:
+      l20-1 0.8s infinite linear,
+      l20-2 1.6s infinite linear;
+  }
+  
+  @keyframes l20-1 {
+    0% {
+      clip-path: polygon(50% 50%, 0 0, 50% 0, 100% 0, 100% 100%, 50% 100%, 0% 100%);
+    }
+    25% {
+      clip-path: polygon(50% 50%, 50% 0, 100% 0, 100% 50%, 100% 100%, 50% 100%, 0% 100%);
+    }
+    50% {
+      clip-path: polygon(50% 50%, 100% 0, 100% 50%, 100% 100%, 50% 100%, 0% 100%, 0 50%);
+    }
+    75% {
+      clip-path: polygon(50% 50%, 100% 100%, 50% 100%, 0% 100%, 0% 50%, 0% 0, 50% 0);
+    }
+    100% {
+      clip-path: polygon(50% 50%, 0 0, 50% 0, 100% 0, 100% 100%, 50% 100%, 0% 100%);
+    }
+  }
+  
+  @keyframes l20-2 {
+    0% {
+      transform: scaleY(1) rotate(0deg);
+    }
+    25% {
+      transform: scaleY(1) rotate(90deg);
+    }
+    50% {
+      transform: scaleY(1) rotate(180deg);
+    }
+    75% {
+      transform: scaleY(1) rotate(270deg);
+    }
+    100% {
+      transform: scaleY(1) rotate(360deg);
+    }
+  } */
+  
+
+  .loader {
     width: 25px;
     aspect-ratio: 1;
     border-radius: 50%;
@@ -173,5 +239,31 @@
     100%  {transform:scaleY(-1) rotate(-135deg)}
   }
 
+
+  /* HTML: <div class="loader"></div> */
+.loade {
+    width: 50px;
+    aspect-ratio: 1;
+    display: grid;
+    border-radius: 50%;
+    background: conic-gradient(#25b09b 25%,#f03355 0 50%,#514b82 0 75%,#ffa516 0);
+    animation: l22 2s infinite linear;
+  }
+  .loade::before,
+  .loade::after {
+     content: "";
+     grid-area: 1/1;
+     margin: 15%;
+     border-radius: 50%;
+     background: inherit;
+     animation: inherit;
+  }
+  .loade::after {
+     margin: 25%;
+     animation-duration: 3s;
+  }
+  @keyframes l22 {
+    100% {transform: rotate(1turn)}
+  }
 
 
