@@ -64,6 +64,14 @@ const TaskList = () => {
     setFilteredTask(updatedFilterTask);
   };
 
+//   const handleDeleteTask = async (id) => {
+//     try {
+//         setTask((prevTask) => prevTask.filter((task) => task._id !== id))
+//     } catch (error) {
+//         console.error('Failed to delete task', error);
+//     }
+// }
+
   const handleDeleteTaskModalOpen = (task) => {
     setSelectedTask(task);
     setIsDeleteTaskModalOpen(true);
@@ -116,14 +124,6 @@ const handleUpdateTask = (updatedTaskData) => {
     
 }
 
-const handleDeleteTask = async (id) => {
-    try {
-        setTask((prevTask) => prevTask.filter((task) => task._id !== id))
-    } catch (error) {
-        console.error('Failed to delete task', error);
-    }
-}
-
   return (
     <div className='taskPage'>
        <div className='taskCon'>
@@ -156,7 +156,7 @@ const handleDeleteTask = async (id) => {
                 </div>
             ))}
         </div>
-        {isDeleteTaskModalaOpen && (<DeleteTaskModal onDeleteTask={handleDeleteTask} onClose={handleDeleteTaskModalClose} task={setSelectedTask}/>)}
+        {isDeleteTaskModalaOpen && (<DeleteTaskModal onDeleteTask={handleDelete} onClose={handleDeleteTaskModalClose} tasks={setSelectedTask}/>)}
         {isEditTaskModalaOpen && (<EditTaskModal onEditTask={handleUpdateTask} onClose={handleEditTaskModalClose} task={setSelectedTask}/>)}
         {isAddTaskModalaOpen && (<AddTaskModal onAddTask={handleAddTask} onClose={handleAddTaskModalClose}/>)}
        </div>
